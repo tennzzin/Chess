@@ -8,7 +8,7 @@ public class Game {
         // Create new board
         Board board = new Board();
         Scanner scanner = new Scanner(System.in);
-        Fen.load("rnbqkbnr/pppppppp/8/8/8/8/pPPPPPPP/RNBQKBNR", board);
+        Fen.load("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR", board);
 
         // Turn system
         int count = 0;
