@@ -1,3 +1,6 @@
+// Written by Tenzin Chonyi, chony003
+// Written by Kalden Sopa, sopa0004
+
 public class Queen {
     // Instance variables
     private int row;
@@ -15,6 +18,7 @@ public class Queen {
             return false;
         }
 
+        // Check vertical, horizontal, or diagonal move
         if (board.verifyVertical(this.row, this.col, endRow, endCol) ||
                 board.verifyHorizontal(this.row, this.col, endRow, endCol) ||
                 board.verifyDiagonal(this.row, this.col, endRow, endCol)) {
@@ -23,5 +27,3 @@ public class Queen {
         return false;
     }
 }
-
-// Written by Tenzin Chonyi, chony003

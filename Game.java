@@ -1,3 +1,6 @@
+// Written by Tenzin Chonyi, chony003
+// Written by Kalden Sopa, sopa0004
+
 import java.util.Scanner;
 
 public class Game {
@@ -5,15 +8,13 @@ public class Game {
         // Create new board
         Board board = new Board();
         Scanner scanner = new Scanner(System.in);
-        Fen.load("rnbqkbnr/pppppppP/8/8/8/8/PPPPPPPP/RNBQKBNR", board);
+        Fen.load("rnbqkbnr/pppppppp/8/8/8/8/pPPPPPPP/RNBQKBNR", board);
 
-        // Keeps check of whose turn it is
+        // Turn system
         int count = 0;
 
-        // Play game until King is captured
+        // Play until a King is captured
         while (!board.isGameOver()) {
-
-            // Print the board and ask for user input
             System.out.println(board);
             if (count % 2 == 0) {
                 System.out.println("It is White's turn.");

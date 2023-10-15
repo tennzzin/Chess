@@ -1,3 +1,6 @@
+// Written by Tenzin Chonyi, chony003
+// Written by Kalden Sopa, sopa0004
+
 import java.util.Scanner;
 
 public class Piece {
@@ -88,9 +91,8 @@ public class Piece {
      * @param isBlack Color of the pawn
      */
     public void promotePawn(int row, boolean isBlack) {
+        // White pawn has reached promotion row
         if (!isBlack && row == 0 && character == '\u2659') {
-
-            // White pawn has reached promotion row
             System.out.println("Choose a piece to promote the white pawn (Q for Queen, R for Rook, K for Knight, B for Bishop): ");
             Scanner s = new Scanner(System.in);
             char promote = s.next().charAt(0);
@@ -109,13 +111,13 @@ public class Piece {
                     break;
                 default:
 
-                    // Default to queen if the promotion choice is not recognized
+                    // Default to queen if promotion choice not recognized
                     this.character = '\u2655';
                     break;
             }
-        } else if (isBlack && row == 7 && character == '\u265f') {
 
-            // Black pawn has reached promotion row
+        // Black pawn has reached promotion row
+        } else if (isBlack && row == 7 && character == '\u265f') {
             System.out.println("Choose a piece to promote the white pawn (Q for Queen, R for Rook, K for Knight, B for Bishop): ");
             Scanner s = new Scanner(System.in);
             char promote2 = s.next().charAt(0);
@@ -134,7 +136,7 @@ public class Piece {
                     break;
                 default:
 
-                    // Default to queen if the promotion choice is not recognized
+                    // Default to queen if promotion choice not recognized
                     this.character = '\u265b';
                     break;
             }

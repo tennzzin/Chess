@@ -1,3 +1,6 @@
+// Written by Tenzin Chonyi, chony003
+// Written by Kalden Sopa, sopa0004
+
 public class Board {
 
     // Instance variables
@@ -67,10 +70,12 @@ public class Board {
             }
         }
 
-        // Worst case scenario
+        // Both kings are present
         if (whiteKing && blackKing) {
             return false;
         }
+
+        // Game over
         return true;
     }
 
@@ -225,11 +230,12 @@ public class Board {
     // - The path from 'start' to 'end' is diagonal... change in row and col.
     // - All spaces directly between 'start' and 'end' are empty, i.e., null.
     public boolean verifyDiagonal(int startRow, int startCol, int endRow, int endCol) {
-       if (startRow == endRow && startCol == endCol) {
+        // Check for no movement
+        if (startRow == endRow && startCol == endCol) {
            return true;
        }
 
-        // Check if row and column difference are equal
+        // Check if row and column differences are equal
         int rowDiff = endRow - startRow;
         int colDiff = endCol - startCol;
         if (Math.abs(rowDiff) != Math.abs(colDiff)) {

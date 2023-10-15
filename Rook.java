@@ -1,3 +1,6 @@
+// Written by Tenzin Chonyi, chony003
+// Written by Kalden Sopa, sopa0004
+
 public class Rook {
     // Instance variables
     private int row;
@@ -14,6 +17,8 @@ public class Rook {
         if (!board.verifySourceAndDestination(this.row, this.col, endRow, endCol, isBlack)) {
             return false;
         }
+
+        // Check vertical or horizontal move
         if (this.row == endRow) {
             return (board.verifyHorizontal(this.row, this.col, endRow, endCol));
         }
@@ -23,5 +28,3 @@ public class Rook {
         return false;
     }
 }
-
-// Written by Tenzin Chonyi, chony003

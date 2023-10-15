@@ -1,3 +1,6 @@
+// Written by Tenzin Chonyi, chony003
+// Written by Kalden Sopa, sopa0004
+
 public class King {
     // Instance variables
     private int row;
@@ -15,8 +18,7 @@ public class King {
             return false;
         }
 
+        // Check adjacent move
         return board.verifyAdjacent(this.row, this.col, endRow, endCol);
     }
 }
-
-// Written by Tenzin Chonyi, chony003
