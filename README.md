@@ -51,5 +51,5 @@ This project is a console-based Chess game implemented in Java. Players can inpu
   Managed game flow, alternating turns, and enforcing win conditions.
 
 ## Authors
-- **Tenzin Chonyi** - [LinkedIn](https://www.linkedin.com/in/tenzin-chonyi-871863252)
+- **Tenzin Chonyi** - [LinkedIn](https://www.linkedin.com/in/tenzin-chonyi)
 - **Kalden Sopa** - [LinkedIn](https://www.linkedin.com/in/kalden-sopa/)
