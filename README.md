@@ -28,8 +28,8 @@ This project is a console-based Chess game implemented in Java. Players can inpu
 
 ## How to Play
 1. Clone the repository:
-   - `git clone https://github.com/tennzzin/chess-game.git`
-   - `cd chess-game`
+   - `git clone https://github.com/tennzzin/chess.git`
+   - `cd chess`
 2. Compile and run the game:
    - `javac *.java`
    - `java Game`
